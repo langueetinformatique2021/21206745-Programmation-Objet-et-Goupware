@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author rophi
+ *
+ */
+module PhilipponProgrammationObjetetGroupware {
+}
