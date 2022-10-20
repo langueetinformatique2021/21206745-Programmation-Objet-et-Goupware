@@ -26,11 +26,17 @@ public class condition4 {
 		list.add(p3);
 		list.add(p4);
 		list.add(p5);
-		
+
+/**
+ * trier la liste par ordre ascendant
+ */
 		Collections.sort(list);
 		
 		int n = list.size();
-		
+
+/**
+ * utilisation d'une structure conditionnelle pour trouver la valeur médianne des 5 variables 
+ */
 		if (n % 2 == 1) {
 			System.out.println("p6 =" + list.get((n+1)/2 - 1));
 		} else {
