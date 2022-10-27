@@ -26,8 +26,7 @@ public class Félin extends Animal {
 	/** cri du félin */
 
 	public void crie() {
-		String crie = "rugit";
-		System.out.println("je suis un animal qui" + crie);
+		System.out.println("je rugis");
 		
 	}
 }
