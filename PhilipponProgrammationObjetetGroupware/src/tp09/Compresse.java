@@ -1,6 +1,6 @@
 package tp09;
 
-import java.io.DataOutputStream;
+import java.io.DataOutputStream; 
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -12,7 +12,7 @@ public class Compresse {
 	public static void main(String[] args) {
 
 		try {
-			File fin = new File("21206745-Programmation-Objet-et-Goupware/src/tp09/Nom.txt");
+			File fin = new File("PhilipponProgrammationObjetetGoupware/src/tp09/Nom.txt");
 			FileInputStream fsource = new FileInputStream(fin);	
 			byte[] tmp = new byte[(int)fin.length()];
 			fsource.read(tmp);
@@ -20,7 +20,7 @@ public class Compresse {
 			
 	
 			FileOutputStream fout = new FileOutputStream(
-					new File("21206745-Programmation-Objet-et-Goupware/src/tp09/Nom.txt.zip"));
+					new File("PhilipponProgrammationObjetetGoupware/src/tp09/Nom.txt.zip"));
 			DataOutputStream fcible = new DataOutputStream(new DeflaterOutputStream(fout));
 			
 			fcible.write(tmp);

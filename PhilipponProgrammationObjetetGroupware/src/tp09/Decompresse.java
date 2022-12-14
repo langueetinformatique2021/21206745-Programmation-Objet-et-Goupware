@@ -1,6 +1,6 @@
 package tp09;
 
-import java.io.DataInputStream;
+import java.io.DataInputStream; 
 import java.io.DataOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
@@ -18,10 +18,10 @@ public class Decompresse {
 
 		try {
 			FileInputStream fin = new FileInputStream(
-					new File("21206745-Programmation-Objet-et-Goupware/src/tp09/Nom.txt.zip"));
+					new File("PhilipponProgrammationObjetetGoupware/src/tp09/Nom.txt.zip"));
 			DataInputStream fsource = new DataInputStream(new InflaterInputStream(fin));
 			FileOutputStream fcible = new FileOutputStream(
-					new File("21206745-Programmation-Objet-et-Goupware/src/tp09/NomD.txt"));
+					new File("PhilipponProgrammationObjetetGoupware/src/tp09/NomD.txt"));
 
 			int tmp;
 			while ((tmp = fsource.read()) != -1) {
